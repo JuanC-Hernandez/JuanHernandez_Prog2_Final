@@ -20,7 +20,7 @@
         </ListView>
         <Label Content="Conference:" Canvas.Left="23" Canvas.Top="10" HorizontalAlignment="Center" VerticalAlignment="Top" Width="80"/>
         <ComboBox x:Name="lbConferences" Canvas.Left="103" Canvas.Top="12" Width="120" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <RichTextBox x:Name="rtbPlayers" Height="214" Width="249" Canvas.Left="520" Canvas.Top="41" HorizontalAlignment="Center" VerticalAlignment="Top">
+        <RichTextBox x:Name="rtbRoster" Height="214" Width="249" Canvas.Left="520" Canvas.Top="41" HorizontalAlignment="Center" VerticalAlignment="Top">
             <FlowDocument>
                 <Paragraph>
                     <Run Text=""/>
