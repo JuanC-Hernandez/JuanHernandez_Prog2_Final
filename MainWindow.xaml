@@ -5,16 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:JuanHernandez_Prog2_Final"
         mc:Ignorable="d"
-        Title="MainWindow" Height="397" Width="800">
+        Title="Football Roster" Height="397" Width="800">
     <Canvas>
         <ListView x:Name="ListView_Teams" Height="214" Width="473" d:ItemsSource="{d:SampleData ItemCount=5}" Canvas.Left="23" Canvas.Top="41" HorizontalAlignment="Center" VerticalAlignment="Top">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Header="Conference"/>
-                    <GridViewColumn Header="Team Name"/>
-                    <GridViewColumn Header="City"/>
-                    <GridViewColumn Header="Stadium"/>
-                    <GridViewColumn Header="Manager"/>
+                    <GridViewColumn Header="Conference" DisplayMemberBinding="{Binding Conference}"/>
+                    <GridViewColumn Header="Team Name" DisplayMemberBinding="{Binding Name}"/>
+                    <GridViewColumn Header="City" DisplayMemberBinding="{Binding City}"/>
+                    <GridViewColumn Header="Stadium" DisplayMemberBinding="{Binding Stadium}"/>
+                    <GridViewColumn Header="Head Coach" DisplayMemberBinding="{Binding Coach}"/>
                 </GridView>
             </ListView.View>
         </ListView>
