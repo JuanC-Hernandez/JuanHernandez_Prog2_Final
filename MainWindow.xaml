@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:JuanHernandez_Prog2_Final"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="397" Width="800">
     <Canvas>
-        <ListView x:Name="Teams" Height="214" Width="473" d:ItemsSource="{d:SampleData ItemCount=5}" Canvas.Left="23" Canvas.Top="59" HorizontalAlignment="Left" VerticalAlignment="Center">
+        <ListView x:Name="ListView_Teams" Height="214" Width="473" d:ItemsSource="{d:SampleData ItemCount=5}" Canvas.Left="23" Canvas.Top="41" HorizontalAlignment="Center" VerticalAlignment="Top">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Conference"/>
@@ -18,6 +18,26 @@
                 </GridView>
             </ListView.View>
         </ListView>
+        <Label Content="Conference:" Canvas.Left="23" Canvas.Top="10" HorizontalAlignment="Center" VerticalAlignment="Top" Width="80"/>
+        <ComboBox x:Name="lbConferences" Canvas.Left="103" Canvas.Top="12" Width="120" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <RichTextBox x:Name="rtbPlayers" Height="214" Width="249" Canvas.Left="520" Canvas.Top="41" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text=""/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Label Content="Player First Name:" Canvas.Left="23" Canvas.Top="260" HorizontalAlignment="Left" VerticalAlignment="Center" Width="104"/>
+        <TextBox x:Name="tbFName" Canvas.Left="132" TextWrapping="Wrap" Canvas.Top="264" Width="140" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Label Content="Player Last Name:" Canvas.Left="23" Canvas.Top="288" HorizontalAlignment="Left" VerticalAlignment="Top" Width="104"/>
+        <TextBox x:Name="tbLName" Canvas.Left="132" TextWrapping="Wrap" Canvas.Top="292" Width="140" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Button x:Name="btnAddPlayer" Content="Add Player" Canvas.Left="288" Canvas.Top="263" HorizontalAlignment="Left" VerticalAlignment="Center" Width="106"/>
+        <RadioButton x:Name="rbActive" Content="Active" Canvas.Left="24" Canvas.Top="315" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <RadioButton x:Name="rbInactive" Content="Inactive" Canvas.Left="88" Canvas.Top="315" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <CheckBox x:Name="cbOffence" Content="Offence" Canvas.Left="163" Canvas.Top="315" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <CheckBox x:Name="cbDeffence" Content="Deffence" Canvas.Left="229" Canvas.Top="315" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <CheckBox x:Name="cbSpecialTeam" Content="Special Teams" Canvas.Left="301" Canvas.Top="315"/>
+        <Button x:Name="btnClear" Content="Clear Fields" Canvas.Left="288" Canvas.Top="291" HorizontalAlignment="Left" VerticalAlignment="Center" Width="106" Background="#FFFFB2B2"/>
 
     </Canvas>
 </Window>
