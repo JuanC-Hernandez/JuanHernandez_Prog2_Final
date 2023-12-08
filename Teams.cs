@@ -15,6 +15,8 @@ namespace JuanHernandez_Prog2_Final
         string _stadium;
         string _coach;
 
+        List<Player> _players;
+
         // constructor
         public Teams(string conference, string name, string city, string stadium, string coach)
         {
@@ -25,11 +27,17 @@ namespace JuanHernandez_Prog2_Final
             _coach = coach;
         }// Teams constructor
 
+        public Teams(string name)
+        {
+            _name = name;
+            _players = new List<Player>();
+        }
         // properties
         public string Conference { get => _conference; set => _conference = value; }
         public string Name { get => _name; set => _name = value; }
         public string City { get => _city; set => _city = value; }
         public string Stadium { get => _stadium; set => _stadium = value; }
         public string Coach { get => _coach; set => _coach = value; }
+        public List<Player> Players { get => _players; set => _players = value; }
     }// Teams
 }// namespace

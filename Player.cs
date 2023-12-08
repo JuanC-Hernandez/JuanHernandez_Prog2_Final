@@ -28,5 +28,18 @@ namespace JuanHernandez_Prog2_Final
         public string Lname { get => _lname; set => _lname = value; }
         public string Team { get => _team; set => _team = value; }
         public string Status { get => _status; set => _status = value; }
+
+        // Display method
+        public string DisplayInformation()
+        {
+            string fullname = _fname + " " + _lname;
+
+            string fullDisplay = ""; // ""
+            fullDisplay += $"Player Name: {fullname }\n";
+            fullDisplay += $"Teams: {_team}\n";
+            fullDisplay += $"Status: {_status}\n";
+            fullDisplay += "-----------------\n";
+            return fullDisplay;
+        }
     }// Player
 }// namespace
